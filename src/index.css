@@ -91,8 +91,11 @@ a {
   color: #1a1a1a;
   padding: 5px;
   border-radius: 50%;
-  margin: 5px;
+  margin: 0 5px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .range-container input[type="range"] {
