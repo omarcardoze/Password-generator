@@ -24,7 +24,6 @@ a {
   cursor: pointer;
 }
 
-
 .container {
   margin: 0;
   display: flex;
@@ -46,7 +45,7 @@ a {
 
 .password-generated {
   width: auto;
-  height: 40px;
+  height: 45px;
   background-color: #fff;
   color: #1a1a1a;
   text-align: left;
@@ -59,12 +58,15 @@ a {
 }
 
 .container-generator h1 {
+  font-size: clamp(1em, 1em + 1vw, 1.5em);;
   margin-bottom: 25px;
   background: linear-gradient(90deg, rgba(199, 222, 17, 1) 0%, rgba(255, 154, 0, 1) 100%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
+  background-color: #fff;
+  text-align: center;
 }
 
 .btn {
