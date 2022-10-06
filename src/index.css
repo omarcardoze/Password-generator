@@ -60,6 +60,11 @@ a {
 
 .container-generator h1 {
   margin-bottom: 25px;
+  background: linear-gradient(90deg, rgba(199, 222, 17, 1) 0%, rgba(255, 154, 0, 1) 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -103,4 +108,3 @@ a {
   height: 10px;
   background: linear-gradient(to right, red, orange, yellow, green, blue);
 }
-
