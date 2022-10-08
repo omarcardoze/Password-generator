@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CopyIcon, CopiedIcon } from './components/CopyIcon';
+import useGenerator from './hooks/useGenerator'
 
 function App() {
   const [password, setPassword] = useState('Your password here!')
@@ -8,6 +9,8 @@ function App() {
 
   const letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*_+<>?/'
   let newPasswordGenerated = ''
+
+  const { copyClipboard } = useGenerator(password, setIsCopied)
 
   const generatePassword = () => {
 
@@ -18,21 +21,6 @@ function App() {
     }
 
     setPassword(newPasswordGenerated)
-  }
-
-  const copyClipboard = () => {
-    navigator.clipboard.writeText(password).then(
-      () => {
-        setIsCopied(true)
-
-        setTimeout(() => {
-          setIsCopied(false)
-        }, 1000)
-      },
-      (err) => {
-        console.error(err)
-      }
-    );
   }
 
   const Handlerange = (event) => {
