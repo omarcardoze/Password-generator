@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { CopyIcon, CopiedIcon } from './components/CopyIcon';
 import useGenerator from './hooks/useGenerator'
+import { letters } from './utils/letters'
 
 function App() {
   const [password, setPassword] = useState('Your password here!')
   const [isCopied, setIsCopied] = useState(false);
   const [rangeValue, setRangeValue] = useState(8)
 
-  const letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~!@#$%^&*_+<>?/'
   let newPasswordGenerated = ''
 
   const { copyClipboard } = useGenerator(password, setIsCopied)
