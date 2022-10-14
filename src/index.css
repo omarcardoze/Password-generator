@@ -36,7 +36,7 @@ a {
 .container-generator {
   width: 500px;
   height: auto;
-  background-color: rgb(55, 4, 196);
+  background: linear-gradient(90deg, rgba(130, 17, 222, 1) 0%, rgba(0, 14, 255, 1) 100%);
   padding: 50px;
   display: flex;
   flex-direction: column;
